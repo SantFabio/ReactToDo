@@ -1,0 +1,86 @@
+:root {
+    font-size: 65.2%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    position: relative;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.btn-done {
+    width: 24px;
+    height: 24px;
+    background: linear-gradient(138deg, rgba(87, 221, 255, 1) 0%, rgba(192, 88, 243, 1) 100%);
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.undone {
+    width: 80%;
+    height: 80%;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: relative;
+}
+
+.check {
+    text-decoration: line-through;
+    color: hsl(236, 33%, 92%);
+}
+
+.needToCheck {
+    color: hsl(235, 19%, 35%);
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 6.4rem;
+    width: auto;
+    border-bottom: 1px solid hsl(236, 33%, 92%);
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+}
+
+.container {
+    position: relative;
+    max-width: 54.0rem;
+    height: auto;
+    margin: auto;
+    top: -250px;
+}
+
+.main {
+    width: 100%;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.50);
+}
+
+.image {
+    position:sticky;
+    margin: 0;
+    padding: 0;
+    height: 29.0rem;
+    width: 100vw;
+    background: url("./components/assets/images/horizon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 47% 47%;
+}
+header > div{
+    display: flex;
+    justify-content: space-between;
+}
