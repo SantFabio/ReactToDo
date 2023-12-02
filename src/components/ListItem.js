@@ -16,9 +16,9 @@ export default function ListItem(props) {
         <>
             <li key={props.item.id}>
                 <Card className={props.item.done ? "check" : "needToCheck"}>
-                    <div onClick={itemOnDone} className="btn-done">
+                    <button onClick={itemOnDone} className="btn-done">
                         {props.item.done ? <img src={Check} alt="check"></img> : <div className="undone"></div>}
-                    </div>
+                    </button>
                     <div className="textItem">
                         {props.item.text}
                     </div>

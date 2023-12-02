@@ -16,7 +16,7 @@ export default function Todo() {
   //     setItems(itemsValue);
   //   }
   // }, []);
-  
+
   // useEffect(() => {
   //   localStorage.setItem(ITEMS_VALUE, JSON.stringify(items));
   // }, [items]);  
@@ -54,18 +54,23 @@ export default function Todo() {
           </div>
           <Form addItems={addItems} />
         </header>
+
         <main className='main'>
           <List onDone={onDone} deleteItem={deleteItem} items={items} />
-          <div>
-            <span>5 items left</span>
+          <div className='TaskFilterStats'>
+            <span>{items.length} items left</span>
             <div>
-              <span>All</span><span>Active</span><span>Completed</span>
+              <span>All</span>
+              <span>Active</span>
+              <span>Completed</span>
             </div>
             <span>Clear Completed</span>
           </div>
         </main>
+
+        <div>Drag and drop to reorder list</div>
       </div>
-      <footer>Drag and drop to reorder list</footer>
+      <footer></footer>
 
     </>
   )

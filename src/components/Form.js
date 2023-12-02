@@ -19,7 +19,7 @@ export default function Form(props) {
         <>
             <form>
                 <Card className="input">
-                    <div className="btn-done" onClick={onAddItem}><div className="undone"></div></div>
+                    <button className="btn-done" onClick={onAddItem}><div className="undone"></div></button>
                     <input placeholder="Create a new todo…" type='text' onChange={onText} value={text}/>
                 </Card>
             </form>

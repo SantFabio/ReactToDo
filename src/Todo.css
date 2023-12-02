@@ -27,8 +27,8 @@ ul {
 }
 
 .undone {
-    width: 95%;
-    height: 95%;
+    width: 22px;
+    height: 22px;
     background-color: #ffffff;
     border-radius: 50%;
     position: relative;
@@ -42,7 +42,13 @@ ul {
 .needToCheck {
     color: hsl(235, 19%, 35%);
 }
-
+.container {
+    position: relative;
+    max-width: 54.0rem;
+    height: auto;
+    margin: auto;
+    top: -250px;
+}
 .card {
     display: flex;
     align-items: center;
@@ -53,27 +59,36 @@ ul {
     padding-left: 2.4rem;
     padding-right: 2.4rem;
     background-color: hsl(0, 0%, 98%);
+    border-radius: 5px;
 }
 .input{
-    border-radius: 5px;
     display: flex;
     justify-content: flex-start;
     margin-bottom: 2.4rem;
 }
 input{
     border: none;
-    margin-left: 2.4rem;
     font-family: Josefin Sans;
     font-size: 1.8rem;
+    width: 40.8rem;
 }
-.container {
-    position: relative;
-    max-width: 54.0rem;
-    height: auto;
-    margin: auto;
-    top: -250px;
+input:focus {
+    outline: none;
+    border: none;
+    caret-color: #3A7CFD;
 }
-
+.textItem{
+    width: 40.8rem;
+    margin-right: 2.0rem;
+    overflow: hidden;
+    background-color: #3A7CFD;
+}
+button{
+    all: unset;
+}
+.card > button{
+    margin-right: 2.0rem;
+}
 .main {
     border-radius: 5px;
     width: 100%;
@@ -93,7 +108,7 @@ input{
 
 }
 
-header>div {
+header > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -110,4 +125,13 @@ h1 {
     font-size: 4.0rem;
     font-weight: 700;
     letter-spacing: 1.5rem;
+}
+.TaskFilterStats{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2.4rem 0 2.4rem;
+    font-size: 1.4rem;
+    height: 5.0rem;
+    background-color: red;
 }
