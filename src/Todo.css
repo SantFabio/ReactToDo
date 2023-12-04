@@ -14,6 +14,11 @@ ul {
     list-style: none;
     padding: 0;
 }
+.taskFilterStats-child2{
+    display: flex;
+    justify-content: space-between;
+    width: 15.6rem;
+}
 
 .btn-done {
     width: 24px;
@@ -58,24 +63,35 @@ ul {
     border-bottom: 1px solid hsl(236, 33%, 92%);
     padding-left: 2.4rem;
     padding-right: 2.4rem;
-    background-color: hsl(0, 0%, 98%);
-    border-radius: 5px;
 }
 .input{
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 2.4rem;
+    /* margin-bottom: 2.4rem; */
+    border-radius: 5px;
 }
 input{
     border: none;
     font-family: Josefin Sans;
     font-size: 1.8rem;
     width: 40.8rem;
+    margin-left: 2.4rem;
 }
 input:focus {
     outline: none;
     border: none;
     caret-color: #3A7CFD;
+}
+form{
+    display: flex;
+    align-items: center;
+    height: 6.4rem;
+    width: auto;
+    border-bottom: 1px solid hsl(236, 33%, 92%);
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    background-color: #ffffff;
+    border-radius: 5px;
 }
 .textItem{
     width: 40.8rem;
@@ -91,20 +107,16 @@ button{
 }
 .main {
     border-radius: 5px;
-    width: 100%;
-    background: #FFfffF;
-    box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.50);
+    background-color: #ffffff;
+    box-shadow: 0px 35px 50px -15px rgb(194, 195, 214); 
 }
-
 .image {
-    position: sticky;
     margin: 0;
     padding: 0;
     height: 29.0rem;
     width: 100vw;
     background:linear-gradient(5deg, rgba(192,88,243,0.8) 23%, rgba(105,107,248,0.8) 67%, rgba(58,123,253,0.8) 93%),
     url("./components/assets/images/horizon.png") 47% 47%/cover no-repeat;
-    background-color: rgb(58, 123, 253)
 
 }
 
@@ -119,19 +131,17 @@ header > div {
     background-color: transparent;
     height: 2.6rem;
 }
-
 h1 {
     color: #FFF;
     font-size: 4.0rem;
     font-weight: 700;
     letter-spacing: 1.5rem;
 }
-.TaskFilterStats{
+.taskFilterStats{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 2.4rem 0 2.4rem;
     font-size: 1.4rem;
     height: 5.0rem;
-    background-color: red;
 }

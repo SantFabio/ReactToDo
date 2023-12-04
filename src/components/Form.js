@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Card from "./Card";
 
 export default function Form(props) {
     const [text, setText] = useState("");
@@ -18,10 +17,8 @@ export default function Form(props) {
     return (
         <>
             <form>
-                <Card className="input">
                     <button className="btn-done" onClick={onAddItem}><div className="undone"></div></button>
                     <input placeholder="Create a new todo…" type='text' onChange={onText} value={text}/>
-                </Card>
             </form>
         </>
     )
