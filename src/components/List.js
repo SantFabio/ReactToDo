@@ -4,7 +4,7 @@ import Sortable from "sortablejs";
 import Filter from "./Filter";
 
 export default function List(props) {
-    const sortableListRef = useRef(null)
+    const sortableListRef = useRef(null);
 
     useEffect(() => {
         if (sortableListRef.current) {
@@ -12,12 +12,30 @@ export default function List(props) {
                 animation: 150,
             });
         }
-    }, [])
+    }, []);
+
+    const filteredItems = props.items.filter((item) => {
+        if (props.filter === 'completed') {
+            return item.done;
+        } else if (props.filter === 'active') {
+            return !item.done;
+        } else {
+            return true;
+        }
+    });
+
     return (
         <>
             <ul ref={sortableListRef}>
-                {props.items.map((item) => <ListItem onDone={props.onDone} deleteItem={props.deleteItem} item={item} />)}
-                <Filter items={props.items}></Filter>
+                <Filter setFilter={props.setFilter} items={props.items} clearList={props.clearList} />
+                {filteredItems.map((item) => (
+                    <ListItem
+                        key={item.id}
+                        onDone={() => props.onDone(item)}
+                        deleteItem={() => props.deleteItem(item)}
+                        item={item}
+                    />
+                ))}
             </ul>
         </>
     )

@@ -9,6 +9,7 @@ import Image from './components/Image';
 const ITEMS_VALUE = 'itemsValue'
 export default function Todo() {
   const [items, setItems] = useState([]);
+  const [filter, setFilter] = useState("all");
 
   useEffect(() => {
     let itemsValue = JSON.parse(localStorage.getItem(ITEMS_VALUE));
@@ -25,11 +26,16 @@ export default function Todo() {
   function addItems(text) {
     let newItem = new Item(text);
     setItems([...items, newItem]);
+    setFilter('all')
   }
   // Função para deletar um item da lista de tarefas
   function deleteItem(item) {
     let filteredItems = items.filter((currentItem) => currentItem.id !== item.id);
     setItems(filteredItems);
+  }
+  // Função para deletar todos os items da lista
+  function clearList() {
+    setItems([]);
   }
   // Função para marcar um item como feito ou não
   function onDone(option) {
@@ -56,7 +62,7 @@ export default function Todo() {
         </header>
 
         <main className='main'>
-            <List onDone={onDone} deleteItem={deleteItem} items={items} />
+          <List filter={filter} setFilter={setFilter} onDone={onDone} deleteItem={deleteItem} items={items} clearList={clearList}/>
         </main>
       </div>
 
