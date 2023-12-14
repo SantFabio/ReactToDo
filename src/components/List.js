@@ -27,7 +27,7 @@ export default function List(props) {
     return (
         <>
             <ul ref={sortableListRef}>
-                <Filter setFilter={props.setFilter} items={props.items} clearList={props.clearList} />
+                <Filter filter={props.filter} setFilter={props.setFilter} items={props.items} clearList={props.clearList} />
                 {filteredItems.map((item) => (
                     <ListItem
                         key={item.id}

@@ -8,16 +8,35 @@
 body {
     font-size: 18px;
     position: relative;
+    background-color: #ffffff;
 }
 
 ul {
     list-style: none;
     padding: 0;
 }
+.taskFilterStats{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2.4rem 0 2.4rem;
+    font-size: 1.4rem;
+    height: 5.0rem;
+    color: #9495A5;
+}
+.taskFilterStats > div:last-child:hover {
+    cursor: pointer;
+    color: #494C6B;
+}
 .taskFilterStats-child2{
     display: flex;
     justify-content: space-between;
     width: 15.6rem;
+    font-weight: 700;
+}
+.taskFilterStats-child2 > div:hover{
+    color: #494C6B;
+    cursor: pointer;
 }
 
 .btn-done {
@@ -29,6 +48,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .undone {
@@ -137,11 +157,19 @@ h1 {
     font-weight: 700;
     letter-spacing: 1.5rem;
 }
-.taskFilterStats{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2.4rem 0 2.4rem;
-    font-size: 1.4rem;
-    height: 5.0rem;
+.filterInFocus{
+    color: #3A7CFD;
+}
+
+.del:hover{
+    cursor: pointer;
+}
+.popup{
+    position: fixed;
+    top: 80%;
+    left: 10%;
+    right: 10%;
+    width: 49.0rem;
+    margin: auto;
+    background-color: #494C6B;
 }

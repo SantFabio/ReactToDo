@@ -5,6 +5,7 @@ import Form from './components/Form';
 import './Todo.css'
 import Item from './components/Item';
 import Image from './components/Image';
+import Popup from './components/Popup';
 
 const ITEMS_VALUE = 'itemsValue'
 export default function Todo() {
@@ -62,10 +63,13 @@ export default function Todo() {
         </header>
 
         <main className='main'>
-          <List filter={filter} setFilter={setFilter} onDone={onDone} deleteItem={deleteItem} items={items} clearList={clearList}/>
+          <List filter={filter} setFilter={setFilter} onDone={onDone} deleteItem={deleteItem} items={items} clearList={clearList} />
         </main>
       </div>
-
-    </>
+        <Popup />
+      <footer>
+        
+      </footer>
+      </>
   )
 }

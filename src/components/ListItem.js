@@ -23,7 +23,7 @@ export default function ListItem(props) {
                         {props.item.text}
                     </div>
                     <div onClick={() => onDeleteItem(props.item)} >
-                        <img src={Cross} alt="delete" />
+                        <img className="del" src={Cross} alt="delete" />
                     </div>
                 </Card>
             </li>
