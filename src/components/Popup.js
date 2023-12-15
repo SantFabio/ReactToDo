@@ -2,18 +2,28 @@ import React, { useState, useEffect } from 'react';
 import Card from './Card';
 
 export default function Popup(props) {
-    const [show, setShow] = useState(false);
+    const [show, setShow] = useState(true);
+
     useEffect(() => {
-        if (props.items.length > 1 ) {
+
+        if (props.items.length === 2) {
             setShow(true)
-            localStorage.setItem("marker", true)
             let interval = setInterval(() => {
                 setShow(false)
                 clearInterval(interval);
-            }, 5000);
+            }, 3000);
         }
-        console.log(true);
+   
     }, [props.items]);
+
+    useEffect(()=>{
+            setShow(true)
+            let interval = setInterval(() => {
+                setShow(false)
+                clearInterval(interval);
+            }, 3000);
+
+    },[])
 
     return (
         <Card className={show ? "popup show" : "popup"}>

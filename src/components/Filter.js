@@ -8,6 +8,8 @@ export default function Filter(props) {
 
     function onSetFilter(event) {
         event.preventDefault();
+
+
         const filterType = event.currentTarget.textContent.toLowerCase();
         if (filterType === 'completed') {
             props.setFilter('completed');
