@@ -66,7 +66,7 @@ export default function Todo() {
           <List filter={filter} setFilter={setFilter} onDone={onDone} deleteItem={deleteItem} items={items} clearList={clearList} />
         </main>
       </div>
-        <Popup />
+        <Popup items={items} />
       <footer>
         
       </footer>
