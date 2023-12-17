@@ -1,16 +1,20 @@
 import { useState, useEffect } from 'react';
-import Moon from "./components/assets/images/icon-sun.svg";
 import List from './components/List';
 import Form from './components/Form';
 import './Todo.css'
 import Item from './components/Item';
 import Image from './components/Image';
 import Popup from './components/Popup';
+import { ThemeProvider } from 'styled-components';
+import { GlobalStyles, darkTheme, lightTheme } from './styles/Theme';
+import ThemeToggle from './components/ThemeToggle';
 
 const ITEMS_VALUE = 'itemsValue'
 export default function Todo() {
   const [items, setItems] = useState([]);
   const [filter, setFilter] = useState("all");
+  const [theme, setTheme] = useState('light');
+
 
   useEffect(() => {
     let itemsValue = JSON.parse(localStorage.getItem(ITEMS_VALUE));
@@ -48,28 +52,29 @@ export default function Todo() {
     })
     setItems(item);
   }
+
+
+
   return (
     <>
-      <Image></Image>
-      <div className="container">
-        <header>
-          <div>
-            <h1>TODO</h1>
-            <button className='modo'>
-              <img src={Moon} alt="moon" />
-            </button>
-          </div>
-          <Form addItems={addItems} />
-        </header>
+      <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
+        <GlobalStyles />
+        <Image></Image>
+        <div className="container">
+          <header>
+            <ThemeToggle theme={theme} setTheme={setTheme}/>
+            <Form addItems={addItems} />
+          </header>
 
-        <main className='main'>
-          <List filter={filter} setFilter={setFilter} onDone={onDone} deleteItem={deleteItem} items={items} clearList={clearList} />
-        </main>
-      </div>
+          <main className='main'>
+            <List filter={filter} setFilter={setFilter} onDone={onDone} deleteItem={deleteItem} items={items} clearList={clearList} />
+          </main>
+        </div>
         <Popup items={items} />
-      <footer>
-        
-      </footer>
-      </>
+        <footer>
+
+        </footer>
+      </ThemeProvider>
+    </>
   )
 }
