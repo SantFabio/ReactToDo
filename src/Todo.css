@@ -8,7 +8,6 @@
 body {
     font-size: 18px;
     position: relative;
-    background-color: #ffffff;
 }
 
 ul {
@@ -102,15 +101,13 @@ input:focus {
     border: none;
     caret-color: #3A7CFD;
 }
-form{
+.form{
     display: flex;
     align-items: center;
     height: 6.4rem;
     width: auto;
-    border-bottom: 1px solid hsl(236, 33%, 92%);
     padding-left: 2.4rem;
     padding-right: 2.4rem;
-    background-color: #ffffff;
     border-radius: 5px;
 }
 .textItem{

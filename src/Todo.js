@@ -63,7 +63,7 @@ export default function Todo() {
         <div className="container">
           <header>
             <ThemeToggle theme={theme} setTheme={setTheme}/>
-            <Form addItems={addItems} />
+            <Form addItems={addItems} theme={theme}/>
           </header>
 
           <main className='main'>
