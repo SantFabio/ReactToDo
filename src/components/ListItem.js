@@ -1,8 +1,17 @@
+import styled from "styled-components";
 import Check from "./assets/images/icon-check.svg";
 import Cross from "./assets/images/icon-cross.svg"
 import Card from "./Card";
 
-
+const UlStyled = styled.li`
+    .needToCheck {
+        color: ${(props) => (props.theme === "light" ? props.theme.colors.fifth : props.theme.colors.fifth)};
+    }
+    .check {
+    text-decoration: line-through;
+    color: ${(props) => (props.theme === "light" ? props.theme.colors.sixth : props.theme.colors.sixth)};
+    }
+`;
 export default function ListItem(props) {
     // Função para deletar um item da lista de tarefas
     function onDeleteItem(item) {
@@ -14,7 +23,7 @@ export default function ListItem(props) {
     }
     return (
         <>
-            <li key={props.item.id}>
+            <UlStyled key={props.item.id}>
                 <Card className={props.item.done ? "check" : "needToCheck"}>
                     <button onClick={itemOnDone} className="btn-done">
                         {props.item.done ? <img src={Check} alt="check"></img> : <div className="undone"></div>}
@@ -26,7 +35,7 @@ export default function ListItem(props) {
                         <img className="del" src={Cross} alt="delete" />
                     </div>
                 </Card>
-            </li>
+            </UlStyled>
         </>
     )
 }

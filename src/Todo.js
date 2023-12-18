@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import List from './components/List';
 import Form from './components/Form';
 import './Todo.css'
 import Item from './components/Item';
@@ -8,11 +7,12 @@ import Popup from './components/Popup';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyles, darkTheme, lightTheme } from './styles/Theme';
 import ThemeToggle from './components/ThemeToggle';
+import Main from './components/Main';
 
 const ITEMS_VALUE = 'itemsValue'
 export default function Todo() {
   const [items, setItems] = useState([]);
-  const [filter, setFilter] = useState("all");
+  const [filter, setFilter] = useState('all');
   const [theme, setTheme] = useState('light');
 
 
@@ -53,22 +53,17 @@ export default function Todo() {
     setItems(item);
   }
 
-
-
   return (
     <>
       <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
         <GlobalStyles />
-        <Image></Image>
+        <Image theme={theme}></Image>
         <div className="container">
           <header>
             <ThemeToggle theme={theme} setTheme={setTheme}/>
             <Form addItems={addItems} theme={theme}/>
           </header>
-
-          <main className='main'>
-            <List filter={filter} setFilter={setFilter} onDone={onDone} deleteItem={deleteItem} items={items} clearList={clearList} />
-          </main>
+          <Main filter={filter} setFilter={setFilter} onDone={onDone} deleteItem={deleteItem} items={items} clearList={clearList}/>
         </div>
         <Popup items={items} />
         <footer>

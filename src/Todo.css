@@ -53,19 +53,10 @@ ul {
 .undone {
     width: 22px;
     height: 22px;
-    background-color: #ffffff;
     border-radius: 50%;
     position: relative;
 }
 
-.check {
-    text-decoration: line-through;
-    color: hsl(236, 33%, 92%);
-}
-
-.needToCheck {
-    color: hsl(235, 19%, 35%);
-}
 .container {
     position: relative;
     max-width: 54.0rem;
@@ -73,13 +64,18 @@ ul {
     margin: auto;
     top: -250px;
 }
+.textItem{
+    width: 40.8rem;
+    margin-right: 2.0rem;
+    overflow: hidden;
+
+}
 .card {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 6.4rem;
     width: auto;
-    border-bottom: 1px solid hsl(236, 33%, 92%);
     padding-left: 2.4rem;
     padding-right: 2.4rem;
 }
@@ -110,33 +106,12 @@ input:focus {
     padding-right: 2.4rem;
     border-radius: 5px;
 }
-.textItem{
-    width: 40.8rem;
-    margin-right: 2.0rem;
-    overflow: hidden;
-
-}
 button{
     all: unset;
 }
 .card > button{
     margin-right: 2.0rem;
 }
-.main {
-    border-radius: 5px;
-    background-color: #ffffff;
-    box-shadow: 0px 35px 50px -15px rgb(194, 195, 214); 
-}
-.image {
-    margin: 0;
-    padding: 0;
-    height: 29.0rem;
-    width: 100vw;
-    background:linear-gradient(5deg, rgba(192,88,243,0.8) 23%, rgba(105,107,248,0.8) 67%, rgba(58,123,253,0.8) 93%),
-    url("./components/assets/images/horizon.png") 47% 47%/cover no-repeat;
-
-}
-
 header > div {
     display: flex;
     justify-content: space-between;

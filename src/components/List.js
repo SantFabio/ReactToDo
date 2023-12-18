@@ -27,15 +27,15 @@ export default function List(props) {
     return (
         <>
             <ul ref={sortableListRef}>
-                <Filter filter={props.filter} setFilter={props.setFilter} items={props.items} clearList={props.clearList} />
                 {filteredItems.map((item) => (
                     <ListItem
-                        key={item.id}
-                        onDone={() => props.onDone(item)}
-                        deleteItem={() => props.deleteItem(item)}
-                        item={item}
+                    key={item.id}
+                    onDone={() => props.onDone(item)}
+                    deleteItem={() => props.deleteItem(item)}
+                    item={item}
                     />
-                ))}
+                    ))}
+                    <Filter filter={props.filter} setFilter={props.setFilter} items={props.items} clearList={props.clearList} />
             </ul>
         </>
     )
