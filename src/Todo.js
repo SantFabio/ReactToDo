@@ -10,22 +10,30 @@ import ThemeToggle from './components/ThemeToggle';
 import Main from './components/Main';
 
 const ITEMS_VALUE = 'itemsValue'
+const THEME_VALUE = 'themeValue';
+
 export default function Todo() {
   const [items, setItems] = useState([]);
   const [filter, setFilter] = useState('all');
   const [theme, setTheme] = useState('light');
 
-
   useEffect(() => {
+    // Retornando os valores salvos no localStorage
     let itemsValue = JSON.parse(localStorage.getItem(ITEMS_VALUE));
+    let themeValue = JSON.parse(localStorage.getItem(THEME_VALUE));
     if (itemsValue) {
       setItems(itemsValue);
+    }
+    if (themeValue) {
+      setTheme(themeValue);
     }
   }, []);
 
   useEffect(() => {
+    // Salvando o valor de items e thema no localStorage
     localStorage.setItem(ITEMS_VALUE, JSON.stringify(items));
-  }, [items]);
+    localStorage.setItem(THEME_VALUE, JSON.stringify(theme));
+  }, [items, theme]);
 
   // Função para adicionar um item da lista de tarefas
   function addItems(text) {
