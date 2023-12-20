@@ -31,7 +31,7 @@ export default function ListItem(props) {
                     <div className="textItem">
                         {props.item.text}
                     </div>
-                    <div onClick={() => onDeleteItem(props.item)} >
+                    <div className="delParent" onClick={() => onDeleteItem(props.item)} >
                         <img className="del" src={Cross} alt="delete" />
                     </div>
                 </Card>

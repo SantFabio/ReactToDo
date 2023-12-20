@@ -132,7 +132,9 @@ h1 {
 .filterInFocus{
     color: #3A7CFD;
 }
-
+.delParent{
+   visibility: hidden;
+}
 .del:hover{
     cursor: pointer;
 }
