@@ -30,10 +30,18 @@ export const darkTheme = {
 };
 
 export const GlobalStyles = createGlobalStyle`
+:root {
+    font-size: 65.2%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 *{
   transition: background-color 0.3s, color 0.3s;
 }
   body {
     background-color: ${(props) => props.theme.body};
+    font-size: 1.8rem;
+    position: relative;
   }
 `;

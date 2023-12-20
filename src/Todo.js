@@ -8,6 +8,8 @@ import { ThemeProvider } from 'styled-components';
 import { GlobalStyles, darkTheme, lightTheme } from './styles/Theme';
 import ThemeToggle from './components/ThemeToggle';
 import Main from './components/Main';
+import { Container } from './components/Container';
+import { Header } from './components/Header';
 
 const ITEMS_VALUE = 'itemsValue'
 const THEME_VALUE = 'themeValue';
@@ -66,17 +68,14 @@ export default function Todo() {
       <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
         <GlobalStyles />
         <Image theme={theme}></Image>
-        <div className="container">
-          <header>
-            <ThemeToggle theme={theme} setTheme={setTheme}/>
-            <Form addItems={addItems} theme={theme}/>
-          </header>
-          <Main filter={filter} setFilter={setFilter} onDone={onDone} deleteItem={deleteItem} items={items} clearList={clearList}/>
-        </div>
+        <Container>
+          <Header>
+            <ThemeToggle theme={theme} setTheme={setTheme} />
+            <Form addItems={addItems} theme={theme} />
+          </Header>
+          <Main filter={filter} setFilter={setFilter} onDone={onDone} deleteItem={deleteItem} items={items} clearList={clearList} />
+        </Container>
         <Popup items={items} />
-        <footer>
-
-        </footer>
       </ThemeProvider>
     </>
   )
