@@ -5,7 +5,10 @@ const ContainerWrapper = styled.div`
     max-width: 54.0rem;
     height: auto;
     margin: auto;
-    top: -250px;
+    top: -270px;
+    @media screen and (max-width: 41.4rem) {
+        max-width: 86%;
+    }
 `;
 
 export const Container = ({ children }) =>{

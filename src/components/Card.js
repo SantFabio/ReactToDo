@@ -1,6 +1,13 @@
 import styled from "styled-components"
 
 const CardStyled = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 6.4rem;
+    width: auto;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
     border-bottom: 2px solid ${(props) => (props.theme === 'light' ? props.theme.colors.third : props.theme.colors.third)};
     &.popup{
         box-shadow: 0px 35px 50px -15px ${(props) => (props.theme === 'light' ? props.theme.colors.fourth : props.theme.colors.fourth)};
@@ -14,11 +21,17 @@ const CardStyled = styled.div`
     &:hover .delParent {
     visibility: visible;
     }
+    button{
+    margin-right: 2.0rem;
+    }
+    @media screen and (max-width: 41.4rem) {
+        height: 4.8rem;
+    }
 `;
 export default function Card(props) {
     return (
         <>
-            <CardStyled className={props.className ? `${props.className} card` : "card"}>
+            <CardStyled className={props.className ? `${props.className}` : ''}>
                 {props.children}
             </CardStyled>
         </>

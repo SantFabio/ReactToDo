@@ -2,6 +2,8 @@ import styled from "styled-components";
 import Check from "./assets/images/icon-check.svg";
 import Cross from "./assets/images/icon-cross.svg"
 import Card from "./Card";
+import ButtonDone from "../styles/ButtonDone"
+
 
 const UlStyled = styled.li`
     .needToCheck {
@@ -25,9 +27,9 @@ export default function ListItem(props) {
         <>
             <UlStyled key={props.item.id}>
                 <Card className={props.item.done ? "check" : "needToCheck"}>
-                    <button onClick={itemOnDone} className="btn-done">
+                    <ButtonDone onClick={itemOnDone} className="btn-done">
                         {props.item.done ? <img src={Check} alt="check"></img> : <div className="undone"></div>}
-                    </button>
+                    </ButtonDone>
                     <div className="textItem">
                         {props.item.text}
                     </div>

@@ -1,18 +1,20 @@
 import { useState } from "react";
 import styled from "styled-components";
+import ButtonDone from "../styles/ButtonDone"
 
 // estilização que muda dependendo do tema 
 const StyledForm = styled.form`
     background-color: ${(props) => (props.theme === "light" ? props.theme.colors.primary : props.theme.colors.primary)};
-    .undone{
-        background-color: ${(props) => (props.theme === "light" ? props.theme.colors.primary : props.theme.colors.primary)};
-    }
+
     input{
         background-color: ${(props) => (props.theme === "light" ? props.theme.colors.primary : props.theme.colors.primary)};
         color: ${(props) => (props.theme === "light" ? props.theme.colors.secondary : props.theme.colors.secondary)};
     }
     input::placeholder{
         color: ${(props) => (props.theme === "light" ? props.theme.colors.secondary : props.theme.colors.secondary)};
+    }
+    @media screen and (max-width: 41.4rem) {
+        height: 4.8rem;
     }
 `;
 
@@ -33,9 +35,9 @@ export default function Form(props) {
     return (
         <>
             <StyledForm className="form">
-                    <button className="btn-done" onClick={onAddItem}>
+                    <ButtonDone onClick={onAddItem}>
                         <div className="undone"></div>
-                    </button>
+                    </ButtonDone>
                     <input placeholder="Create a new todo…" type='text' onChange={onText} value={text}/>
             </StyledForm>
         </>

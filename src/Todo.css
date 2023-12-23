@@ -3,64 +3,14 @@ ul {
     list-style: none;
     padding: 0;
 }
-.taskFilterStats{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2.4rem 0 2.4rem;
-    font-size: 1.4rem;
-    height: 5.0rem;
-    color: #9495A5;
-}
-.taskFilterStats > div:last-child:hover {
-    cursor: pointer;
-    color: #494C6B;
-}
-.taskFilterStats-child2{
-    display: flex;
-    justify-content: space-between;
-    width: 15.6rem;
-    font-weight: 700;
-}
-.taskFilterStats-child2 > div:hover{
-    color: #494C6B;
-    cursor: pointer;
-}
-
-.btn-done {
-    width: 24px;
-    height: 24px;
-    background: linear-gradient(138deg, rgba(87, 221, 255, 1) 0%, rgba(192, 88, 243, 1) 100%);
-    border-radius: 50%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.undone {
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    position: relative;
-}
 
 .textItem{
-    width: 40.8rem;
+    width: auto;
     margin-right: 2.0rem;
     overflow: hidden;
 
 }
-.card {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 6.4rem;
-    width: auto;
-    padding-left: 2.4rem;
-    padding-right: 2.4rem;
-}
+
 .input{
     display: flex;
     justify-content: flex-start;
@@ -71,7 +21,7 @@ input{
     border: none;
     font-family: Josefin Sans;
     font-size: 1.8rem;
-    width: 40.8rem;
+    width: auto;
     margin-left: 2.4rem;
 }
 input:focus {
@@ -88,12 +38,8 @@ input:focus {
     padding-right: 2.4rem;
     border-radius: 5px;
 }
-button{
-    all: unset;
-}
-.card > button{
-    margin-right: 2.0rem;
-}
+
+
 
 .filterInFocus{
     color: #3A7CFD;
