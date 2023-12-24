@@ -2,7 +2,11 @@ import { useEffect, useRef } from "react";
 import ListItem from "./ListItem";
 import Sortable from "sortablejs";
 import Filter from "./Filter";
-
+import styled from "styled-components";
+const UlStyled = styled.ul`
+    list-style: none;
+    padding: 0;
+    `;
 export default function List(props) {
     const sortableListRef = useRef(null);
 
@@ -26,7 +30,7 @@ export default function List(props) {
 
     return (
         <>
-            <ul ref={sortableListRef}>
+            <UlStyled ref={sortableListRef}>
                 {filteredItems.map((item) => (
                     <ListItem
                     key={item.id}
@@ -36,7 +40,7 @@ export default function List(props) {
                     />
                     ))}
                     <Filter filter={props.filter} setFilter={props.setFilter} items={props.items} clearList={props.clearList} />
-            </ul>
+            </UlStyled>
         </>
     )
 }

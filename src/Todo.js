@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import Form from './components/Form';
-import './Todo.css'
 import Item from './components/Item';
 import Image from './components/Image';
 import Popup from './components/Popup';

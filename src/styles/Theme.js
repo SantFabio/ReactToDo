@@ -50,7 +50,7 @@ export const GlobalStyles = createGlobalStyle`
   body {
     background-color: ${(props) => props.theme.body};
     font-size: 1.8rem;
-    position: relative;
+    /* position: relative; */
     @media screen and (max-width: 41.4rem) {
       *{
           font-size: 1.2rem;

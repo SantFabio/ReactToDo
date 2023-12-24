@@ -6,8 +6,9 @@ import styled from 'styled-components';
 
 const H1andToggle = styled.div`
     margin-bottom: 3.0rem;
+    margin-top: 3.0rem;
     @media screen and (max-width: 41.4rem) {
-    margin-bottom: 2.0rem;
+    margin-bottom: 2.5rem;
     margin-top: 2.5rem;
     }
     h1 {

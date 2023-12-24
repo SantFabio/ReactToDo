@@ -11,7 +11,11 @@ const StyledForm = styled.form`
     padding-left: 2.4rem;
     padding-right: 2.4rem;
     border-radius: 5px;
+    margin-bottom: 2.4rem;
     background-color: ${(props) => (props.theme === "light" ? props.theme.colors.primary : props.theme.colors.primary)};
+    @media screen and (max-width: 41.4rem) {
+        margin-bottom: 1.5rem;
+    }
 
     input{
         background-color: ${(props) => (props.theme === "light" ? props.theme.colors.primary : props.theme.colors.primary)};
