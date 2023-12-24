@@ -19,6 +19,14 @@ const UlStyled = styled.li`
         display: flex;
         align-items: center;
     }
+    .textItem{
+        width: 80%;
+        margin-right: 2.0rem;
+        overflow: hidden;
+        @media screen and (max-width: 41.4rem) {
+            width: 70%;
+        }
+    }
     &:hover .delParent {
     cursor: pointer;
     visibility: visible;

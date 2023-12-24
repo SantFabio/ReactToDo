@@ -4,46 +4,6 @@ ul {
     padding: 0;
 }
 
-.textItem{
-    width: auto;
-    margin-right: 2.0rem;
-    overflow: hidden;
-
-}
-
-.input{
-    display: flex;
-    justify-content: flex-start;
-    /* margin-bottom: 2.4rem; */
-    border-radius: 5px;
-}
-input{
-    border: none;
-    font-family: Josefin Sans;
-    font-size: 1.8rem;
-    width: auto;
-    margin-left: 2.4rem;
-}
-input:focus {
-    outline: none;
-    border: none;
-    caret-color: #3A7CFD;
-}
-.form{
-    display: flex;
-    align-items: center;
-    height: 6.4rem;
-    width: auto;
-    padding-left: 2.4rem;
-    padding-right: 2.4rem;
-    border-radius: 5px;
-}
-
-
-
-.filterInFocus{
-    color: #3A7CFD;
-}
 
 .popup {
     position: fixed;

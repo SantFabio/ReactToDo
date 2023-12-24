@@ -30,7 +30,7 @@ const TaskFilterStyled = styled.div`
                 background-color: ${(props) => (props.theme === "light" ? props.theme.colors.primary : props.theme.colors.primary)};
                 top: 6.5rem;
                 right: 0.0rem;
-                max-width: 85%;
+                max-width: calc(100% - 4.1rem);
                 width: 100%;
                 border-bottom: none;
                 border-radius: 0.5rem;
@@ -41,7 +41,9 @@ const TaskFilterStyled = styled.div`
         color: #494C6B;
         cursor: pointer;
     }
-
+    .filterInFocus{
+        color: #3A7CFD;
+    }
 `;
 export default function Filter(props) {
 
