@@ -8,6 +8,7 @@ const ContainerWrapper = styled.div`
     top: -270px;
     @media screen and (max-width: 41.4rem) {
         max-width: 86%;
+        top: -190px;
     }
 `;
 

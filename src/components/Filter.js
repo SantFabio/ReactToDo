@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Card from "./Card";
 
 const TaskFilterStyled = styled.div`
     position: relative;
@@ -18,12 +19,22 @@ const TaskFilterStyled = styled.div`
         justify-content: space-between;
         width: 15.6rem;
         font-weight: 700;
+        border-bottom: none;
+        gap: 2.0rem;
             @media screen and (max-width: 41.4rem) {
                 position: absolute;
                 display: flex;
                 align-items: center;
-                background-color: pink;
-                top: 100px;
+                justify-content: center;
+                gap: 2.0rem;
+                background-color: ${(props) => (props.theme === "light" ? props.theme.colors.primary : props.theme.colors.primary)};
+                top: 6.5rem;
+                right: 0.0rem;
+                max-width: 85%;
+                width: 100%;
+                border-bottom: none;
+                border-radius: 0.5rem;
+                box-shadow: 0px 35px 50px -15px ${(props) => (props.theme === 'light' ? props.theme.colors.fourth : props.theme.colors.fourth)};            
             }
     }
     .taskFilterStats-child2 > div:hover{
@@ -57,11 +68,11 @@ export default function Filter(props) {
         <>
             <TaskFilterStyled className='taskFilterStats'>
                 <div>{props.items.length} items left</div>
-                <div className="taskFilterStats-child2">
+                <Card className="taskFilterStats-child2">
                     <div onClick={onSetFilter} className={props.filter === "all" ? "filterInFocus" : ""}>All</div>
                     <div onClick={onSetFilter} className={props.filter === "active" ? "filterInFocus" : ""}>Active</div>
                     <div onClick={onSetFilter} className={props.filter === "completed" ? "filterInFocus" : ""}>Completed</div>
-                </div>
+                </Card>
                 <div onClick={onClearList}>Clear Completed</div>
             </TaskFilterStyled>
         </>

@@ -44,12 +44,7 @@ input:focus {
 .filterInFocus{
     color: #3A7CFD;
 }
-.delParent{
-   visibility: hidden;
-}
-.del:hover{
-    cursor: pointer;
-}
+
 .popup {
     position: fixed;
     left: 50%;

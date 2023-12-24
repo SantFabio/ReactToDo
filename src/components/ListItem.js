@@ -13,6 +13,24 @@ const UlStyled = styled.li`
     text-decoration: line-through;
     color: ${(props) => (props.theme === "light" ? props.theme.colors.sixth : props.theme.colors.sixth)};
     }
+    .delParent{
+        visibility: hidden;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    &:hover .delParent {
+    cursor: pointer;
+    visibility: visible;
+    }
+    @media screen and (max-width: 41.4rem) {
+        .delParent {
+            visibility: visible;
+            img{
+                width: 1.2rem;
+            }
+        }
+    }
 `;
 export default function ListItem(props) {
     // Função para deletar um item da lista de tarefas

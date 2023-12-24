@@ -13,6 +13,10 @@ export const lightTheme = {
     fourth: '#c2c3d680',
     fifth: '#494C6B',
     sixth: '#D1D2DA'
+  },
+  bgp: {
+    position: '50% 42%',
+    size: '380%'
   }
 };
 
@@ -26,6 +30,10 @@ export const darkTheme = {
     fourth: '#00000080',
     fifth: '#C8CBE7',
     sixth: '#4D5067'
+  },
+  bgp: {
+    position: '76% 59%',
+    size: '230%'
   }
 };
 

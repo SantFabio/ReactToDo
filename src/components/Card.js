@@ -18,14 +18,14 @@ const CardStyled = styled.div`
     .undone{
         background-color: ${(props) => (props.theme === "light" ? props.theme.colors.primary : props.theme.colors.primary)};
     }
-    &:hover .delParent {
-    visibility: visible;
-    }
+
     button{
     margin-right: 2.0rem;
     }
     @media screen and (max-width: 41.4rem) {
         height: 4.8rem;
+        padding-left: 2.0rem;
+        padding-right: 2.0rem;
     }
 `;
 export default function Card(props) {

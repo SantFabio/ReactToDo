@@ -15,6 +15,8 @@ const StyledForm = styled.form`
     }
     @media screen and (max-width: 41.4rem) {
         height: 4.8rem;
+        padding-left: 2.0rem;
+        padding-right: 2.0rem;
     }
 `;
 
