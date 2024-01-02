@@ -1,7 +1,7 @@
 // ThemeToggle.js
 import React from 'react';
-import Moon from './assets/images/icon-moon.svg';
-import Sun from './assets/images/icon-sun.svg';
+import Moon from '../assets/images/icon-moon.svg';
+import Sun from '../assets/images/icon-sun.svg';
 import styled from 'styled-components';
 
 const H1andToggle = styled.div`

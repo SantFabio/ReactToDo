@@ -1,7 +1,7 @@
 // Theme.js
 import { createGlobalStyle } from 'styled-components';
-import horizon from "../components/assets/images/horizon.png";
-import corridor from "../components/assets/images/corridor.png";
+import horizon from "../assets/images/horizon.png";
+import corridor from "../assets/images/corridor.png";
 
 export const lightTheme = {
   body: '#FAFAFA',

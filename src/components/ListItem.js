@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import Check from "./assets/images/icon-check.svg";
-import Cross from "./assets/images/icon-cross.svg"
+import Check from "../assets/images/icon-check.svg";
+import Cross from "../assets/images/icon-cross.svg"
 import Card from "./Card";
 import ButtonDone from "../styles/ButtonDone"
 
