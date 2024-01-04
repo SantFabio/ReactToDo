@@ -1,14 +1,14 @@
 import { useState, useEffect } from 'react';
-import Form from './components/Form';
-import Item from './components/Item';
-import Image from './components/Image';
-import Popup from './components/Popup';
+import Form from './components/Form/Form';
+import Item from './components/Item/Item';
+import Image from './components/ImageComp/Image';
+import Popup from './components/Popup/Popup';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyles, darkTheme, lightTheme } from './styles/Theme';
-import ThemeToggle from './components/ThemeToggle';
-import Main from './components/Main';
-import { Container } from './components/Container';
-import { Header } from './components/Header';
+import ThemeToggle from './components/ThemeToggle/ThemeToggle';
+import Main from './components/Main/Main';
+import { Container } from './components/Container/Container';
+import { Header } from './components/Header/Header';
 
 const ITEMS_VALUE = 'itemsValue'
 const THEME_VALUE = 'themeValue';

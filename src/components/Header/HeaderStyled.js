@@ -7,11 +7,4 @@ const HeaderStyled = styled.header`
     align-items: center;
     }
 `;
-
-export const Header = ({ children }) =>{
-    return(
-        <HeaderStyled>
-            {children}
-        </HeaderStyled>
-    )
-}
+export default HeaderStyled;

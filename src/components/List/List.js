@@ -1,12 +1,9 @@
 import { useEffect, useRef } from "react";
-import ListItem from "./ListItem";
+import ListItem from "../ListItem/ListItem";
 import Sortable from "sortablejs";
-import Filter from "./Filter";
-import styled from "styled-components";
-const UlStyled = styled.ul`
-    list-style: none;
-    padding: 0;
-    `;
+import Filter from "../Filter/Filter";
+import UlStyled from "./UlStyled";
+
 export default function List(props) {
     const sortableListRef = useRef(null);
 

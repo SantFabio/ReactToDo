@@ -1,6 +1,4 @@
-import { useState } from "react";
 import styled from "styled-components";
-import ButtonDone from "../styles/ButtonDone"
 
 // estilização que muda dependendo do tema 
 const StyledForm = styled.form`
@@ -43,29 +41,4 @@ const StyledForm = styled.form`
         padding-right: 2.0rem;
     }
 `;
-
-export default function Form(props) {
-    const [text, setText] = useState("");
-
-    function onText(event) {
-        let txt = event.target.value;
-        setText(txt);
-    }
-    function onAddItem(event) {
-        event.preventDefault();
-        if (text) {
-            props.addItems(text);
-            setText("");
-        }
-    }
-    return (
-        <>
-            <StyledForm className="form">
-                    <ButtonDone onClick={onAddItem}>
-                        <div className="undone"></div>
-                    </ButtonDone>
-                    <input placeholder="Create a new todo…" type='text' onChange={onText} value={text}/>
-            </StyledForm>
-        </>
-    )
-}
+export default StyledForm;

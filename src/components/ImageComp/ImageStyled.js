@@ -17,11 +17,4 @@ const ImageStyled = styled.div`
     }
 `;
 
-export default function Image(props) {
-    return (
-        <>
-            <ImageStyled></ImageStyled>
-        </>
-    );
-}
-
+export default ImageStyled;

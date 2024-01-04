@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import Card from './Card';
+import Card from '../Card/Card';
 
 export default function Popup(props) {
     const [show, setShow] = useState(false);

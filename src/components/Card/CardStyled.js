@@ -44,12 +44,4 @@ const CardStyled = styled.div`
         padding-right: 2.0rem;
     }
 `;
-export default function Card(props) {
-    return (
-        <>
-            <CardStyled className={props.className ? `${props.className}` : ''}>
-                {props.children}
-            </CardStyled>
-        </>
-    )
-}
+export default CardStyled;

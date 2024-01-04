@@ -9,11 +9,4 @@ const ContainerWrapper = styled.div`
         width: 86%;
     }
 `;
-
-export const Container = ({ children }) =>{
-    return(
-        <ContainerWrapper className="container">
-            {children}
-        </ContainerWrapper>
-    )
-}
+export default ContainerWrapper;
