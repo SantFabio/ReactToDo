@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.03481db5.css",
-    "main.js": "/static/js/main.f30c1dfd.js",
-    "static/js/787.8eb42f38.chunk.js": "/static/js/787.8eb42f38.chunk.js",
-    "static/media/horizon.png": "/static/media/horizon.61332949baf9764b731f.png",
-    "static/media/corridor.png": "/static/media/corridor.204b6f3bf4535be13d70.png",
-    "index.html": "/index.html",
-    "static/media/icon-sun.svg": "/static/media/icon-sun.910b1f9a23741afc341e95653a51f14f.svg",
-    "static/media/icon-moon.svg": "/static/media/icon-moon.6c03114b495d05f4380b3c544d9afe2a.svg",
-    "static/media/icon-cross.svg": "/static/media/icon-cross.6ee81d30b75cab19d6f7314624fcc4d6.svg",
-    "static/media/icon-check.svg": "/static/media/icon-check.a8fb15d0278c8e312df5fc8364fef863.svg",
-    "main.03481db5.css.map": "/static/css/main.03481db5.css.map",
-    "main.f30c1dfd.js.map": "/static/js/main.f30c1dfd.js.map",
-    "787.8eb42f38.chunk.js.map": "/static/js/787.8eb42f38.chunk.js.map"
+    "main.css": "/ReactToDo/static/css/main.03481db5.css",
+    "main.js": "/ReactToDo/static/js/main.92dfce51.js",
+    "static/js/787.8eb42f38.chunk.js": "/ReactToDo/static/js/787.8eb42f38.chunk.js",
+    "static/media/horizon.png": "/ReactToDo/static/media/horizon.61332949baf9764b731f.png",
+    "static/media/corridor.png": "/ReactToDo/static/media/corridor.204b6f3bf4535be13d70.png",
+    "index.html": "/ReactToDo/index.html",
+    "static/media/icon-sun.svg": "/ReactToDo/static/media/icon-sun.910b1f9a23741afc341e95653a51f14f.svg",
+    "static/media/icon-moon.svg": "/ReactToDo/static/media/icon-moon.6c03114b495d05f4380b3c544d9afe2a.svg",
+    "static/media/icon-cross.svg": "/ReactToDo/static/media/icon-cross.6ee81d30b75cab19d6f7314624fcc4d6.svg",
+    "static/media/icon-check.svg": "/ReactToDo/static/media/icon-check.a8fb15d0278c8e312df5fc8364fef863.svg",
+    "main.03481db5.css.map": "/ReactToDo/static/css/main.03481db5.css.map",
+    "main.92dfce51.js.map": "/ReactToDo/static/js/main.92dfce51.js.map",
+    "787.8eb42f38.chunk.js.map": "/ReactToDo/static/js/787.8eb42f38.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.03481db5.css",
-    "static/js/main.f30c1dfd.js"
+    "static/js/main.92dfce51.js"
   ]
 }
