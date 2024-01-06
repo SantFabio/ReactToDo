@@ -64,14 +64,17 @@ $ npm install
 # Execute o aplicativo
 $ npm start
 ```
-## Contato
-
-[LinkedIn](https://www.linkedin.com/in/lfabiopsantana/)
-
-Email: f4biosantana@gmail.com
-
-WhatsApp: [Mensagem](https://wa.me/5591980426870?text=Tenho%20interesse%20em%20contratar%20)
-
 ## Licença
 
-[Licensa](https://github.com/SantFabio/ReactToDo/blob/main/LICENSE)
+[MIT](https://github.com/SantFabio/ReactToDo/blob/main/LICENSE)
+
+## Contato
+
+[LinkedIn](https://www.linkedin.com/in/lfabiopsantana/) &nbsp;&middot;&nbsp;
+ f4biosantana@gmail.com &nbsp;&middot;&nbsp;  [WhatsApp](https://wa.me/5591980426870?text=Tenho%20interesse%20em%20contratar%20)
+
+## Apoie-me
+
+<a href="https://www.buymeacoffee.com/f4biosantat" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
+</br>
+</br>
