@@ -71,3 +71,7 @@ $ npm start
 Email: f4biosantana@gmail.com
 
 WhatsApp: [Mensagem](https://wa.me/5591980426870?text=Tenho%20interesse%20em%20contratar%20)
+
+## Licença
+
+[Licensa](https://github.com/SantFabio/ReactToDo/blob/main/LICENSE)
