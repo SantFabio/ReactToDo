@@ -7,16 +7,17 @@
 <h4 align="center">Um aplicativo ToDo construído com React.</h4>
 
 <p align="center">
+  <a href="#capturas-de-tela">Capturas de Tela</a> •
   <a href="#status-do-projeto">Status do Projeto</a> •
   <a href="#tecnologias-utilizadas">Tecnologias Utilizadas</a> •
   <a href="#instalação">Instalação</a> •
   <a href="#como-usar">Como Usar</a> •
   <a href="#licença">Licença</a> •
-  <a href="#créditos">Créditos</a> •
   <a href="#contato">Contato</a> •
-  <a href="#capturas-de-tela">Capturas de Tela</a> •
   <a href="https://santfabio.github.io/ReactToDo/">Demo Online</a>
 </p>
+
+## Capturas de tela
 
 ![screenshot](https://github.com/SantFabio/ReactToDo/blob/master/design/desktop-design-dark.jpg)
 ![screenshot](https://github.com/SantFabio/ReactToDo/blob/master/design/desktop-design-light.jpg)
@@ -63,3 +64,10 @@ $ npm install
 # Execute o aplicativo
 $ npm start
 ```
+## Contato
+
+[LinkedIn](https://www.linkedin.com/in/lfabiopsantana/)
+
+Email: f4biosantana@gmail.com
+
+WhatsApp: [Mensagem](https://wa.me/5591980426870?text=Tenho%20interesse%20em%20contratar%20)
