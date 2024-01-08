@@ -36,7 +36,7 @@ export default function List(props) {
                     item={item}
                     />
                     ))}
-                    <Filter filter={props.filter} setFilter={props.setFilter} items={props.items} clearList={props.clearList} />
+                    <Filter filter={props.filter} setFilter={props.setFilter} items={props.items} clearCompletedItems={props.clearCompletedItems} />
             </UlStyled>
         </>
     )

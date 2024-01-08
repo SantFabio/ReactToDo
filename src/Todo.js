@@ -48,7 +48,7 @@ export default function Todo() {
     setItems(filteredItems);
   }
   // Função para deletar todos os items da lista
-  function clearList() {
+  function clearCompletedItems() {
     let filteredItemsDone = items.filter((currentItem) => !currentItem.done);
     setItems(filteredItemsDone);
   }
@@ -73,7 +73,7 @@ export default function Todo() {
             <ThemeToggle theme={theme} setTheme={setTheme} />
             <Form addItems={addItems} theme={theme} />
           </Header>
-          <Main filter={filter} setFilter={setFilter} onDone={onDone} deleteItem={deleteItem} items={items} clearList={clearList} />
+          <Main filter={filter} setFilter={setFilter} onDone={onDone} deleteItem={deleteItem} items={items} clearCompletedItems={clearCompletedItems} />
         </Container>
         <Popup items={items} />
       </ThemeProvider>

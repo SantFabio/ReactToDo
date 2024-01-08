@@ -5,7 +5,7 @@ export default function Filter(props) {
 
     function onClearList(event) {
         event.preventDefault();
-        props.clearList()
+        props.clearCompletedItems();
     }
 
     function onSetFilter(event) {
