@@ -49,7 +49,8 @@ export default function Todo() {
   }
   // Função para deletar todos os items da lista
   function clearList() {
-    setItems([]);
+    let filteredItemsDone = items.filter((currentItem) => !currentItem.done);
+    setItems(filteredItemsDone);
   }
   // Função para marcar um item como feito ou não
   function onDone(option) {
