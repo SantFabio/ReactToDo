@@ -10,8 +10,7 @@ export default function Filter(props) {
 
     function onSetFilter(event) {
         event.preventDefault();
-
-
+        //pega o contéudo do elemento e tranforma em caixa baixa para poder comparar.
         const filterType = event.currentTarget.textContent.toLowerCase();
         if (filterType === 'completed') {
             props.setFilter('completed');
