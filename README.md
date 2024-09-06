@@ -50,6 +50,7 @@ Projeto completo.
 ## Como Usar
 
 Para clonar e executar este aplicativo, você precisará do [Git](https://git-scm.com) e do [Node.js](https://nodejs.org/en/download/) (que vem com [npm](http://npmjs.com)) instalados no seu computador. Do seu terminal:
+[deploy](https://santfabio.github.io/ReactToDo/)
 
 ```bash
 # Clone este repositório
